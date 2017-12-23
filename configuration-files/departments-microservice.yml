@@ -8,3 +8,4 @@ spring:
           group: departments
     config:
       uri: http://localhost:8788
+      label: master
