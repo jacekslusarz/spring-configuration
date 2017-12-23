@@ -6,6 +6,4 @@ spring:
           destination: new-users
           content-type: application/json
           group: departments
-    config:
-      uri: http://localhost:8788
-      label: master
+
