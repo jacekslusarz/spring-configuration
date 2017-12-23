@@ -1,0 +1,18 @@
+spring:
+  jackson:
+    default-property-inclusion: non_null
+  sleuth:
+    sampler:
+      percentage: 0.1
+  zipkin:
+    base-url: http://192.168.0.16:8080
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://192.168.0.11:8080/eureka/
+hystrix:
+  shareSecurityContext: true
+signing:
+  key: "{cipher}4f2e7d4a4d9494a3d482c0e42be9a1f048ece04c276df7cc62e6fa00825a3d42"
